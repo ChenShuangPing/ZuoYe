@@ -14,11 +14,11 @@ namespace WindowsFormsApplication1
     {
         public class ProductInfo
         {
-            public string name = "";
-            public float rate;//预计年化率
-            public string term = "";//投资期限（月）
-            public string waysOfIncome = "";//受益方式
-            public double amount;// 投资金额
+            public  string name = "";
+            public  float rate;//预计年化率
+            public  string term = "";//投资期限（月）
+            public  string waysOfIncome = "";//受益方式
+            public  double amount;// 投资金额
         }
 
 
@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1
         string html;
         public List<ProductInfo> products = new List<ProductInfo>();
 
-        public GetHTML()
+        public GetHTML(string url)
         {
             try
             {
@@ -34,13 +34,13 @@ namespace WindowsFormsApplication1
                 //获取或设置用于对向Internet资源的请求进行身份验证的网络凭据。
                 myWebClient.Credentials = CredentialCache.DefaultCredentials;
                 //从指定网站下载数据
-                Byte[] pageData = myWebClient.DownloadData("https://list.lu.com/list/p2p");
+                Byte[] pageData = myWebClient.DownloadData(url);
                 string pageHTML = Encoding.UTF8.GetString(pageData);
 
                 html = pageHTML;
                 findData();
 
-                StreamWriter sw = new StreamWriter("C:\\Users\\xu\\Desktop\\GetHTMLTest.html");
+                StreamWriter sw = new StreamWriter("C:\\GetHTMLTest.html");
                 sw.Write(pageHTML);
             }
             catch(WebException webEx)
