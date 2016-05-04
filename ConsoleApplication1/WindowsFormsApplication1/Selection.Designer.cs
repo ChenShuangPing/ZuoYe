@@ -508,6 +508,7 @@
             this.投资期限.Name = "投资期限";
             this.投资期限.Size = new System.Drawing.Size(345, 19);
             this.投资期限.TabIndex = 39;
+            this.投资期限.Paint += new System.Windows.Forms.PaintEventHandler(this.投资期限_Paint);
             // 
             // 起投金额
             // 
@@ -529,7 +530,7 @@
             this.收益方式.Controls.Add(this.radioButton14);
             this.收益方式.Location = new System.Drawing.Point(97, 137);
             this.收益方式.Name = "收益方式";
-            this.收益方式.Size = new System.Drawing.Size(440, 23);
+            this.收益方式.Size = new System.Drawing.Size(440, 28);
             this.收益方式.TabIndex = 41;
             this.收益方式.Paint += new System.Windows.Forms.PaintEventHandler(this.收益方式_Paint);
             // 

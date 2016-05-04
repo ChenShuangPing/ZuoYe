@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TestLog4Net;
 
 namespace WindowsFormsApplication1
 {
@@ -44,7 +45,7 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            LogHelper.WriteLog(typeof(Selection), "测试Log4Net日志是否写入");
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -58,6 +59,11 @@ namespace WindowsFormsApplication1
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void 投资期限_Paint(object sender, PaintEventArgs e)
         {
 
         }
