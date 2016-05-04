@@ -10,7 +10,7 @@ using System.IO;
 
 namespace WindowsFormsApplication1
 {
-    public class GetHTML
+    public class HTMLget
     {
         public class ProductInfo
         {
@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1
         string html;
         public List<ProductInfo> products = new List<ProductInfo>();
 
-        public GetHTML(string url)
+        public HTMLget(string url)
         {
             try
             {
