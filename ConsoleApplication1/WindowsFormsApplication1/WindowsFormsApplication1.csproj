@@ -52,7 +52,7 @@
     <Compile Include="Selection.Designer.cs">
       <DependentUpon>Selection.cs</DependentUpon>
     </Compile>
-    <Compile Include="HTMLget.cs" />
+    <Compile Include="HTMLextraction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Selection.resx">

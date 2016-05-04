@@ -10,7 +10,7 @@ using System.IO;
 
 namespace WindowsFormsApplication1
 {
-    public class HTMLget
+    public class HTMLextraction
     {
         public class ProductInfo
         {
@@ -26,7 +26,7 @@ namespace WindowsFormsApplication1
         string html;
         public List<ProductInfo> products = new List<ProductInfo>();
 
-        public HTMLget(string url)
+        public HTMLextraction(string url)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace WindowsFormsApplication1
                 html = pageHTML;
                 findData();
 
-                StreamWriter sw = new StreamWriter("C:\\GetHTMLTest.html");
+                StreamWriter sw = new StreamWriter("D:\\GetHTMLTest.html");
                 sw.Write(pageHTML);
             }
             catch(WebException webEx)
