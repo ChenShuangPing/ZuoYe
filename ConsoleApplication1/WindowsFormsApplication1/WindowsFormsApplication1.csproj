@@ -92,7 +92,9 @@
     <EmbeddedResource Include="Collection.resx">
       <DependentUpon>Collection.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="App1.config" />
+    <None Include="App1.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
