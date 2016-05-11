@@ -16,9 +16,7 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Selection());
-            Application.Run(new Profile());
-            Application.Run(new Collection());
+            Application.Run(new Form1());
         }
     }
 }
