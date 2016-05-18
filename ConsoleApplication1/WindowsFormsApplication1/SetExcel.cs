@@ -49,7 +49,7 @@ namespace WindowsFormsApplication1
 
         private void OpenExcel()
         {
-            string file = "D:\\Users\\xu\\Desktop\\test.xlsx";
+            string file = "C:\\Users\\Administrator\\Desktop\\test.xlsx";
 
             excel = new ExcelPackage(new FileInfo(file));
             if (excel.Workbook.Worksheets.Count == 0)

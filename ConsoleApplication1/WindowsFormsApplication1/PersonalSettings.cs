@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
 
         public void SetMoney(int m)
         {
-            string file = "D:\\Users\\xu\\Desktop\\PersonalSettings.txt";
+            string file = "C:\\Users\\Administrator\\Desktop\\PersonalSettings.txt";
 
             FileStream fs = new FileStream(file, FileMode.Create);
             StreamWriter sw = new StreamWriter(fs);
@@ -29,7 +29,7 @@ namespace WindowsFormsApplication1
 
         public PersonalSettings()
         {
-            string file = "D:\\Users\\xu\\Desktop\\PersonalSettings.txt";
+            string file = "C:\\Users\\Administrator\\Desktop\\PersonalSettings.txt";
 
             if(File.Exists(file))
             {

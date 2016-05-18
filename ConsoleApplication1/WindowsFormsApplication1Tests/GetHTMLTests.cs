@@ -51,7 +51,7 @@ namespace WindowsFormsApplication1.Tests
                 //test专属
                 writeProductsData();
 
-                StreamWriter sw = new StreamWriter("D:\\Users\\xu\\Desktop\\GetHTMLTest.html");
+                StreamWriter sw = new StreamWriter("C:\\Users\\Administrator\\Desktop\\GetHTMLTest.html");
                 sw.Write(pageHTML);
             }
             catch (WebException webEx)
@@ -145,7 +145,7 @@ namespace WindowsFormsApplication1.Tests
         //写出products数据
         void writeProductsData()
         {
-            FileStream fs = new FileStream("D:\\Users\\xu\\Desktop\\products.txt", FileMode.Create);
+            FileStream fs = new FileStream("C:\\Users\\Administrator\\Desktop\\products.txt", FileMode.Create);
             StreamWriter sw = new StreamWriter(fs);
             for(int i = 0; i < products.Count; i++)
             {
