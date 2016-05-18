@@ -162,7 +162,7 @@ namespace WindowsFormsApplication1
         //写出products数据
         void writeProductsData()
         {
-            FileStream fs = new FileStream("C:\\Users\\Administrator\\Desktop\\products.txt", FileMode.Create);
+            FileStream fs = new FileStream("C:\\Users\\xu\\Desktop\\products.txt", FileMode.Create);
             StreamWriter sw = new StreamWriter(fs);
             for (int i = 0; i < products.Count; i++)
             {

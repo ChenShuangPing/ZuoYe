@@ -10,47 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form2 : Form
+
+    public partial class Form4 : Form
     {
-        public int money;
+        public string oldDate;
 
-        public string date;
-
-
-        public Form2()
+        public Form4()
         {
             InitializeComponent();
         }
 
-
-        //投资按钮
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "")
-                return;
-            try
-            {
-                money = int.Parse(textBox1.Text);
-
-                if (money > int.Parse(label_Money.Text))
-                {
-                    MessageBox.Show("资金不足", "警告");
-                    return;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("输入不合法", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            if (money < 0)
-            {
-                MessageBox.Show("输入不合法", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            date = textBox2.Text;
+            string date = textBox2.Text;
 
             //判断是不是合法日期
             if (!IsLegalDate(date))
@@ -59,14 +31,22 @@ namespace WindowsFormsApplication1
                 return;
             }
 
+            if (oldDate != "0")
+            {
+                if (int.Parse(oldDate) > int.Parse(date))
+                {
+                    MessageBox.Show("输入的日期与存储投资记录冲突", "警告", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
 
             //设置对话模式结果为OK
             this.DialogResult = DialogResult.OK;
 
             this.Close();
 
-        }
 
+        }
         //判断日期是否合法
         private bool IsLegalDate(string date)
         {
@@ -115,17 +95,8 @@ namespace WindowsFormsApplication1
 
             return true;
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //                               表示退格键
-            if (!char.IsNumber(e.KeyChar) && e.KeyChar != (char)8)
-                e.Handled = true;//表示已经处理过（就是不处理）
-        }
     }
+
+
+
 }

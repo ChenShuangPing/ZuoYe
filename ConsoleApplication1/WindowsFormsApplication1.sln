@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{3AA2469A-B22A-497B-8549-E0EAD22059BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "招财猫", "WindowsFormsApplication1\招财猫.csproj", "{3AA2469A-B22A-497B-8549-E0EAD22059BB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1Tests", "WindowsFormsApplication1Tests\WindowsFormsApplication1Tests.csproj", "{4971F971-F455-42B9-9CC3-0BC47179ED4F}"
 EndProject

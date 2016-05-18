@@ -59,9 +59,9 @@
     <Compile Include="SetExcelTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WindowsFormsApplication1\WindowsFormsApplication1.csproj">
+    <ProjectReference Include="..\WindowsFormsApplication1\招财猫.csproj">
       <Project>{3AA2469A-B22A-497B-8549-E0EAD22059BB}</Project>
-      <Name>WindowsFormsApplication1</Name>
+      <Name>招财猫</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

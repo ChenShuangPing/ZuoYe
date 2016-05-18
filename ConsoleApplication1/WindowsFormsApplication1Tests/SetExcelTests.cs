@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1.Tests
         [TestMethod()]
         public void CreatExcelTest()
         {
-            string file = "C:\\Users\\Administrator\\Desktop\\test.xlsx";
+            string file = "C:\\Users\\xu\\Desktop\\test.xlsx";
 
             ExcelPackage excel = new ExcelPackage(new FileInfo(file));
             ExcelWorksheet sheet = excel.Workbook.Worksheets.Add("sheet1");
