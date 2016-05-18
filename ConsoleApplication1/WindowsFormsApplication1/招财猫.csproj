@@ -36,6 +36,10 @@
     <Reference Include="EPPlus">
       <HintPath>.\EPPlus.dll</HintPath>
     </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -76,6 +80,7 @@
     </Compile>
     <Compile Include="GetHTML.cs" />
     <Compile Include="GetWebsite.cs" />
+    <Compile Include="LogHelper.cs" />
     <Compile Include="PersonalSettings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

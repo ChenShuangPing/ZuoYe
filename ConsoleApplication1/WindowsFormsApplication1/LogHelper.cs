@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-[assembly: log4net.Config.XmlConfigurator(ConfigFile = "APP1.config",Watch = true)]
+[assembly: log4net.Config.XmlConfigurator(ConfigFile = "APP.config",Watch = true)]
 namespace TestLog4Net
 {
     public class LogHelper
