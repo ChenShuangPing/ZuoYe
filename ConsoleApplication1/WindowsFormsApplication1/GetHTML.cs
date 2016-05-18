@@ -36,7 +36,7 @@ namespace WindowsFormsApplication1
 
         public GetHTML(string h)
         {
-            //保存网址
+            //保存网址。
             website = h;
 
             SetHTML(h);
